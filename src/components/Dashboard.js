@@ -46,6 +46,8 @@ export default function Dashboard(props) {
     newBatter();
     setAwayRuns(0);
     setHomeRuns(0);
+    setOuts(0);
+    setHits(0);
     document.getElementsByClassName("awayBatting")[0].classList.remove("atBat");
     document.getElementsByClassName("homeBatting")[0].classList.add("atBat");
   };
