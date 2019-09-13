@@ -2,6 +2,23 @@ import React from "react";
 import "../Dashboard.scss";
 import Display from "./Display";
 
+//Testing function:
+export const stricken = strikes => {
+  if (strikes >= 2) return "Out";
+  else return strikes + 1;
+};
+export const foulen = strikes => {
+  if (strikes < 2) return strikes + 1;
+  else return "foul";
+};
+export const ballen = balls => {
+  if (balls < 3) {
+    return balls + 1;
+  } else {
+    return "walk";
+  }
+};
+
 export default function Dashboard(props) {
   const {
     fouls,
