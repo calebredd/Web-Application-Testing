@@ -3,11 +3,13 @@
   flex-direction: column;
   background: rgba(100, 100, 100, .5);
   box-shadow: 0px 0px 5px white;
+  text-shadow: 0px 0px 2px white;
 
   .buttons {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 
     button {
       margin: 10px;
@@ -15,7 +17,6 @@
       background: red;
       color: white;
       box-shadow: 0px 0px 5px white;
-      text-shadow: 0px 0px 2px white;
 
       &:hover {
         color: black;
